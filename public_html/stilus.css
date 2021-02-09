@@ -1,8 +1,12 @@
 @charset "UTF-8";
 
-main,header,article {border:1px solid grey;}
+main,header,article 
+{border:1px solid grey;
+ box-sizing:border-box;
+ padding:50px;
+ margin:2px;}
 
-body {background-color:lightgreen;}
+body {background:lightgreen;}
 
 main {
     background-color: rosybrown;
@@ -12,7 +16,35 @@ main {
 }
 
 article {
-    background-color: white;
+    background: white;
 }
 
+main {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-content:flex-start;
+}
 
+article {
+    width:calc(30% - 4px);
+    text-align:justify;
+    align-self:flex-start;
+}
+
+header{
+    width:100%;
+    order:-1;
+}
+
+main article:nth-child(4)
+{
+    color:brown;
+    order:-1;
+}
+
+@media screen and (max-width:600) {
+    main {flex-direction:column;}
+    
+}
