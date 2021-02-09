@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+main,header,article {border:1px solid grey;}
+
+body {background-color:lightgreen;}
+
+main {
+    background-color: rosybrown;
+    max-width:800px;
+    width:80%;
+    margin:auto;
+}
+
+article {
+    background-color: white;
+}
+
+
